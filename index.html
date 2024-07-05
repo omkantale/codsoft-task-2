@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(108, 65, 125);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60;
+            background-color: rgb(55, 5, 105);
+        }
+
+        nav .left {
+            margin-right: 60px;
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(246, 28, 64);
+            font-size: 1.04rem;
+
+        }
+
+        .firstsec {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .leftsection {
+            margin: 100px 0px;
+            width: 30%;
+            font-size: 2.5rem;
+
+
+
+        }
+
+        .rightsection {
+
+            width: 30%;
+        }
+
+        span {
+            color: rgb(244, 20, 13);
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(245, 246, 248);
+        }
+
+        .symbol{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Om`s portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsec">
+            <div class="leftsection">
+                Hii I am <span>Om,</span>
+                <div>
+                    I am an engineering student
+                    <span id="element" style="color:rgb(244, 20, 13);"></span>
+                </div>
+            </div>
+            <div class="rightsection">
+
+                <image src="bg.png" style="width: 90%; margine:20px"></image>
+
+
+
+            </div>
+        </section>
+
+        <div class="section2">
+            <div style="width:33%; font-size:1.4rem" >About
+                <p style="font-size: 1.2rem; color: rgb(243, 143, 43);">
+                    I am an undergradute engineering student.I am passionate about the new technology and creating
+                    innovative thing for industries
+                </p>
+            </div>
+            <div style="font-size:1.4rem">Skill
+                <ul style="font-size: 1.3rem; color:rgb(243, 143, 43);"
+                >
+                    <li>Web devlopment</li>
+                    <li>cpp</li>
+                    <li>web designing</li>
+                    <li>core java</li>
+                </ul>
+            </div>
+            <div style="font-size:1.4rem; font-style: italic ; color-scheme:rgb(207, 2, 36) ;">Projects
+                <ul style="font-size: 1.3rem; color:rgb(243, 143, 43)">
+                    <li>Todo list</li>
+                    <li>Amazon Clone
+                    </li>
+                    <Li>Spotify clone </Li>
+                    <li>Portfolio Website</li>
+                </ul>
+            </div>
+        </div>
+        
+           
+        </section>
+    </main>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web designer', 'Software engineer', 'Graphics designer'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
